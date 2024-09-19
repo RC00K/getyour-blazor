@@ -1,0 +1,31 @@
+﻿@page "/"
+
+<PageTitle>HOL Home</PageTitle>
+
+@* <h1>Hands On Lab App</h1> *@
+@* *@
+@* Welcome to the Blazor Hands On Lap App. *@
+
+@* <Weather /> *@
+
+@* <Counter StartCount="42" CurrentCountChanged="CountChanged" /> *@
+
+<div class="counter-container">
+    <div class="grid"></div>
+    @* <CascadingValue Value="123"> *@
+    @*     <Counter CurrentCountChanged="CountChanged" /> *@
+    @* </CascadingValue> *@
+    
+    <PersonTable />
+</div>
+
+@code {
+
+    private int CurrentCount = 0;
+    
+    private void CountChanged(int count)
+    {
+        CurrentCount = count;
+    }
+
+}

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorCallingApis\\BlazorCallingApis\\BlazorCallingApis\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorCallingApis.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorCallingApis.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorCallingApis\\BlazorCallingApis\\BlazorCallingApis\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorCallingApis\\BlazorCallingApis\\BlazorCallingApis\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorCallingApis\\BlazorCallingApis\\BlazorCallingApis\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorCallingApis\\BlazorCallingApis\\BlazorCallingApis\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorCallingApis.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorCallingApis.props",
+      "PackagePath": "build\\BlazorCallingApis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorCallingApis.props",
+      "PackagePath": "buildMultiTargeting\\BlazorCallingApis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorCallingApis.props",
+      "PackagePath": "buildTransitive\\BlazorCallingApis.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

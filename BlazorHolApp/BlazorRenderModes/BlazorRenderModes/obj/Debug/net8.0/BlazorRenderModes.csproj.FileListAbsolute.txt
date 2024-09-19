@@ -1,0 +1,6 @@
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.csproj.AssemblyReference.cache
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.AssemblyInfoInputs.cache
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.AssemblyInfo.cs
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.csproj.CoreCompileInputs.cache
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorRenderModes\BlazorRenderModes\obj\Debug\net8.0\BlazorRenderModes.MvcApplicationPartsAssemblyInfo.cache

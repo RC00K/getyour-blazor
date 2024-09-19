@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorJsInterop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorJsInterop.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\wwwroot\\chart.js",
+      "PackagePath": "staticwebassets\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorJsInterop\\BlazorJsInterop\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorJsInterop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorJsInterop.props",
+      "PackagePath": "build\\BlazorJsInterop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorJsInterop.props",
+      "PackagePath": "buildMultiTargeting\\BlazorJsInterop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorJsInterop.props",
+      "PackagePath": "buildTransitive\\BlazorJsInterop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

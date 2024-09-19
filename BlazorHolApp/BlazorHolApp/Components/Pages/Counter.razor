@@ -1,0 +1,118 @@
+﻿@* @page "/counter" *@
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<div id="glowercounter">
+    <div class="glow"></div>
+    <div class="dark-border"></div>
+    <div class="dark-border"></div>
+    <div class="dark-border"></div>
+    <div class="white-border"></div>
+    <div class="plain-border"></div>
+
+    <div id="glowinginput">
+        <!-- If currentCount equals 0 then show placeholder -->
+        @* @if (CurrentCount == 0) *@
+        @* { *@
+        @*     <input type="text" name="text" class="input" placeholder="Enter a number"/> *@
+        @* } *@
+        @* else *@
+        @* { *@
+        @*     <input type="text" name="text" class="input" @bind="CurrentCount"/> *@
+        @* } *@
+        <input type="text" name="text" class="input centered-input" @bind="CurrentCount"/>
+
+        <div id="input-mask"></div>
+        <div id="pink-mask"></div>
+        <div class="sub-border"></div>
+        <div id="sub-icon" @onclick="DecrementCount">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-minus">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+        </div>
+        <div class="add-border"></div>
+        <div id="add-icon" @onclick="IncrementCount">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-plus">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+        </div>
+        @* <div id="stopwatch-icon"> *@
+        @*     <svg *@
+        @*         xmlns="http://www.w3.org/2000/svg" *@
+        @*         width="24" *@
+        @*         height="24" *@
+        @*         viewBox="0 0 24 24" *@
+        @*         fill="none" *@
+        @*         stroke="currentColor" *@
+        @*         stroke-width="2" *@
+        @*         stroke-linecap="round" *@
+        @*         stroke-linejoin="round" *@
+        @*         class="feather feather-stopwatch"> *@
+        @*         <circle stroke="url(#stop)" cx="12" cy="14" r="8"></circle> *@
+        @*         <line stroke="url(#stopl)" x1="12" y1="6" x2="12" y2="10"></line> *@
+        @*         <line stroke="url(#stopl)" x1="8" y1="2" x2="16" y2="2"></line> *@
+        @*         <line stroke="url(#stopl)" x1="12" y1="2" x2="12" y2="6"></line> *@
+        @*         <line stroke="url(#stopl)" x1="16" y1="10" x2="12" y2="14"></line> *@
+        @*         <defs> *@
+        @*             <linearGradient gradientTransform="rotate(50)" id="stop"> *@
+        @*                 <stop stop-color="#f8e7f8" offset="0%"></stop> *@
+        @*                 <stop stop-color="#b6a9b7" offset="50%"></stop> *@
+        @*             </linearGradient> *@
+        @*             <linearGradient id="stopl"> *@
+        @*                 <stop stop-color="#b6a9b7" offset="0%"></stop> *@
+        @*                 <stop stop-color="#837484" offset="50%"></stop> *@
+        @*             </linearGradient> *@
+        @*         </defs> *@
+        @*     </svg> *@
+        @* </div> *@
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<int> CurrentCountChanged { get; set; }
+    
+    [CascadingParameter]
+    public int StartCount { get; set; }
+    
+    public int CurrentCount { get; set; }
+
+    protected override void OnInitialized()
+    {
+        CurrentCount = StartCount;
+    }
+    
+    private async Task DecrementCount()
+    {
+        CurrentCount--;
+        await CurrentCountChanged.InvokeAsync(CurrentCount);
+    }
+    
+    private async Task IncrementCount()
+    {
+        CurrentCount++;
+        await CurrentCountChanged.InvokeAsync(CurrentCount);
+    }
+}

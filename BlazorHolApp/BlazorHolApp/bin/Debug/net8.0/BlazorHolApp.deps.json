@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BlazorHolApp/1.0.0": {
+        "dependencies": {
+          "BlazorHolData": "1.0.0"
+        },
+        "runtime": {
+          "BlazorHolApp.dll": {}
+        }
+      },
+      "BlazorHolData/1.0.0": {
+        "runtime": {
+          "BlazorHolData.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorHolApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlazorHolData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

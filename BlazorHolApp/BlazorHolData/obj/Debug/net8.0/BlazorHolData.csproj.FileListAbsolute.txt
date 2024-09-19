@@ -1,0 +1,11 @@
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\bin\Debug\net8.0\BlazorHolData.deps.json
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\bin\Debug\net8.0\BlazorHolData.dll
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\bin\Debug\net8.0\BlazorHolData.pdb
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.AssemblyInfoInputs.cache
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.AssemblyInfo.cs
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.csproj.CoreCompileInputs.cache
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.dll
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\refint\BlazorHolData.dll
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\BlazorHolData.pdb
+C:\Users\Ryder.Cook\RiderProjects\BlazorHolApp\BlazorHolData\obj\Debug\net8.0\ref\BlazorHolData.dll

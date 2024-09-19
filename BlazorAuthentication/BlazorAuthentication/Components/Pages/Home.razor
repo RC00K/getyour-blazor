@@ -1,0 +1,54 @@
+﻿@page "/"
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<div class="border border-primary">
+    @if (_authenticationState.User.Identity is { IsAuthenticated: true })
+    {
+        <p>You are authorized.</p>
+        <p>Username: @_authenticationState.User.Identity.Name</p>
+        @foreach (var claim in _authenticationState.User.Claims)
+        {
+            <p>@Capitalize(claim.Type.Substring(claim.Type.LastIndexOf('/') + 1)): @claim.Value</p>
+        }
+        <p>Is Admin: @_authenticationState.User.IsInRole("Admin")</p>
+    }
+    else
+    {
+        <p>You are not authenticated.</p>
+    }
+</div>
+
+@code {
+
+    private AuthenticationState _authenticationState = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Failed to get authentication state: {ex.Message}");
+        }
+    }
+
+    private string Capitalize(string str)
+    {
+        if (string.IsNullOrEmpty(str))
+        {
+            return str;
+        }
+
+        return char.ToUpper(str[0]) + str.Substring(1).ToLower();
+    }
+
+}

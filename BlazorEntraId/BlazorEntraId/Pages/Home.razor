@@ -1,0 +1,48 @@
+﻿@page "/"
+
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Text.Json
+
+@inject HttpClient Http
+
+<PageTitle>Index</PageTitle>
+
+<h1>Blazor WebAssembly Entra Id Signin</h1>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div>This page page can be accessed by all users, authenticated or not.</div>
+        <p>Click <a href="authentication/login">Log in</a> to sign into the application.</p>
+    </NotAuthorized>
+    <Authorized>
+        @if (graphApiResponse != null)
+        {
+            <p>
+                The app called Microsoft Graph's <code>/me</code> API for your user and received the following:
+            </p>
+            
+            <p><pre><code class="language-js">@JsonSerializer.Serialize(graphApiResponse, new JsonSerializerOptions { WriteIndented = true })</code></pre></p>
+        }
+        
+        @code {
+
+            private JsonDocument? graphApiResponse = null;
+            
+            protected override async Task OnInitializedAsync()
+            {
+                try
+                {
+                    using var response = await Http.GetAsync("https://graph.microsoft.com/v1.0/me");
+                    response.EnsureSuccessStatusCode();
+                    graphApiResponse = await response.Content.ReadFromJsonAsync<JsonDocument>().ConfigureAwait(false);
+                }
+                catch (AccessTokenNotAvailableException exception)
+                {
+                    exception.Redirect();
+                }
+            }
+
+        }
+    </Authorized>
+</AuthorizeView>

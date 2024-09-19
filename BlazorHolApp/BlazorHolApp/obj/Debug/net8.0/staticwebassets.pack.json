@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorHolApp\\BlazorHolApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorHolApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorHolApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorHolApp\\BlazorHolApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorHolApp\\BlazorHolApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorHolApp\\BlazorHolApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ryder.Cook\\RiderProjects\\BlazorHolApp\\BlazorHolApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorHolApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorHolApp.props",
+      "PackagePath": "build\\BlazorHolApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorHolApp.props",
+      "PackagePath": "buildMultiTargeting\\BlazorHolApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorHolApp.props",
+      "PackagePath": "buildTransitive\\BlazorHolApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
